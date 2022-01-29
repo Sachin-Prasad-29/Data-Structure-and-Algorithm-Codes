@@ -22,7 +22,7 @@ public class binarySearchInfinite {
 	public static int searchInfinite(int[] a,int x){
 		int low=0; int high =1;
 		while(a[high]< x) {
-			low=high;
+			low=high; 
 			high=2*high;
 		}
 		return binarySearch(a,x,low,high);

@@ -23,10 +23,10 @@ public class binarySearchUsingRecursion {
 			int mid=low+(high-low)/2;
 			if(a[mid]==x)
 				return mid;
-			else if(a[mid]<x)
+			if(a[mid]>x)
 				return binarySearch(a,x,low,mid-1);
-			else
-				return binarySearch(a,x,mid+1,high);
+			
+		   return binarySearch(a,x,mid+1,high);
 		
 	}
 	
