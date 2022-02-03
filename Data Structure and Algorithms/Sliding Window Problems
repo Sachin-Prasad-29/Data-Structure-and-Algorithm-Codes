@@ -1,0 +1,15 @@
+Problems on Sliding Window
+
+Fixed Window :
+1. Max/min sub array of size k
+2. Ist -ve in every min size of k
+3.Count ocerence of anagram
+4. max of all subarray of sixe k
+5. move of min for every win size
+
+Variable :
+1.Largest / smallest subarray with sum k
+2. Largest sub string wiht k distinct character
+3. largest of largest sub string with no repestion character 
+4. Pick toy 
+5. minimum window substring
