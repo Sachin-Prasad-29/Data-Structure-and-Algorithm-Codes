@@ -19,7 +19,7 @@ public class StockBuyAndSell {
 
 	private static int maxProfitStock(int[] a, int n) {
 			int minSofar=a[0];
-			int max_Profit=a[0];
+			int max_Profit=0;
 			for(int i =0;i<n;i++) {
 				minSofar=Math.min(minSofar, a[i]);
 				int profit=a[i]-minSofar;
