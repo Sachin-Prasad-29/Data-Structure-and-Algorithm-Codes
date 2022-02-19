@@ -1,1 +1,5 @@
 Stack:
+1.when there is double nested for loop of i,j where j loop depend on i value then there is a chance of stack DS.
+      e.g  for(i=0;i < n; i++)
+              for(j=i;j<n;j++)
+      here j depend on i
