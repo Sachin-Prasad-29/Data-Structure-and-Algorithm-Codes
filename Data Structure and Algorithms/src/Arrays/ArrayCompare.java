@@ -10,6 +10,7 @@ public class ArrayCompare {
 		String s= "cbaebabacd";
 		String p= "abc";
 		ArrayList<Integer> res= findAnagrams(s,p);
+		System.out.println(res);
 	}
 
 	private static ArrayList<Integer> findAnagrams(String s, String p) {
@@ -24,7 +25,7 @@ public class ArrayCompare {
 	  // Now create two 26 size int size array to store the frequency of s and p stirng character
 	  
 	  int[] P_fre=new int[26];
-	  for(char c:p.toCharArray()))
+	  for(char c:p.toCharArray())
 				P_fre[c-'a']++;
 				
 	// we have to take 

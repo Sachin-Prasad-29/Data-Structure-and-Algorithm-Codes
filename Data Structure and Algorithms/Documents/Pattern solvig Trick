@@ -1,0 +1,9 @@
+Pattern Questions -
+
+How to approach Questions:
+
+1. no of lines = no of rows = NO of times outer loop will run
+2. Identify for every row no. 
+   * how many cols are there with respect to rows number
+   * Types of element in col 
+3. What so you need to print 
