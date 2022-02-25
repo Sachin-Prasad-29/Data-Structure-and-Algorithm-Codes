@@ -1,5 +1,8 @@
 package Trees;
 
+import java.util.LinkedList;
+import java.util.*;
+
 /**
  * Binary_tree_Representation
  */
@@ -23,7 +26,7 @@ public class Binary_tree_Representation {
             this.right = right;
         }
     }
-    static int index = -1;
+    public static int index = -1;
     
         public static Node buildTree(int[] nodes){
         index++;
@@ -45,6 +48,8 @@ public class Binary_tree_Representation {
         inOrder(root);
         System.out.println("Usinf post Order traversal");
         postOrder(root);
+        System.out.println(" Using the Breadth wise search");
+        System.out.println(BreathWiseTravesal(root));
     }
 
    public static void preOrder(Node node){
@@ -68,6 +73,40 @@ public class Binary_tree_Representation {
         postOrder(node.left);
         postOrder(node.right);
         System.out.println(node.data);
+   }
+
+   public static List<List<Integer>> BreathWiseTravesal(Node root){
+      // System.out.println("hello");
+        List<List<Integer>> list = new ArrayList<>();
+           if(root == null){
+              System.out.println(" its empty");
+              return list;
+           }
+           
+        Queue<Node> q = new LinkedList<>();
+        // Now insert the root value to the queue
+        q.offer(root);
+        while(!q.isEmpty()){
+            // now for every Node in we run for loop to find and store there Left and right node
+            int level = q.size();
+           // System.out.println("queue size "+ level );
+            List<Integer> levelVal = new ArrayList<>();
+
+            for(int i = 0; i < level; i++){
+                // add left node to the queue if it exist
+                if(q.peek().left != null)
+                    q.offer(q.peek().left);
+                // add right node if it exist
+                if(q.peek().right != null)
+                    q.offer(q.peek().right);
+
+                levelVal.add(q.poll().data);
+             //   System.out.println(levelVal);
+            }
+            list.add(levelVal);
+
+        }
+      return list;
    }
     /*
              (1)
