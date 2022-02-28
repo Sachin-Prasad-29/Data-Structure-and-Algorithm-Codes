@@ -37,38 +37,65 @@ public class PostOrder_traversal {
         System.out.println("Using PostOrder traversal using stack");
         postOrder(root);
     }
-
-
-    public static void postOrder(Node root){
-        Stack<Node> s1 = new Stack<>();
-        Stack<Node> s2 = new Stack<>();
-
-        if(root == null){
-            System.out.println("no nodes in the tree");
+     // USING 1 SINGLE STACK
+     public static void postOrder(Node root){
+         if(root == null){
+            System.out.println("No node in the tree");
             return;
-        }
-        Node node = root;
-        s1.push(node);
-        while(!s1.isEmpty()){
-            node = s1.pop();
-            s2.push(node);
-            if(node.left != null)
-                s1.push(node.left);
-            if(node.right != null)
-                s1.push(node.right);
+         }
+         Stack<Node> s = new Stack<>();
+         Node currNode = root;
+         while(currNode != null || !s.isEmpty()){
+             if(currNode != null){
+                 s.push(currNode);
+                 currNode = currNode.left;
+             }
+             else{
+                 Node temp = s.peek().right;
+                 if(temp == null){
+                     temp = s.peek();
+                     System.out.println(s.pop().data);
+                     while(!s.isEmpty() && temp == s.peek().right){
+                         temp = s.peek();
+                         System.out.println(s.pop().data);
+                     }
+                 }
+                 else
+                    currNode = temp;
+             }
+         }
+     }
+     //USING 2 STACK 
+    // public static void postOrder(Node root){
+    //     Stack<Node> s1 = new Stack<>();
+    //     Stack<Node> s2 = new Stack<>();
+
+    //     if(root == null){
+    //         System.out.println("no nodes in the tree");
+    //         return;
+    //     }
+    //     Node node = root;
+    //     s1.push(node);
+    //     while(!s1.isEmpty()){
+    //         node = s1.pop();
+    //         s2.push(node);
+    //         if(node.left != null)
+    //             s1.push(node.left);
+    //         if(node.right != null)
+    //             s1.push(node.right);
             
-        }
+    //     }
 
-        System.out.println(s2.pop().data);
-        System.out.println(s2.pop().data);
-        System.out.println(s2.pop().data);
-        System.out.println(s2.pop().data);
-        System.out.println(s2.pop().data);
-        System.out.println(s2.pop().data);
+    //     System.out.println(s2.pop().data);
+    //     System.out.println(s2.pop().data);
+    //     System.out.println(s2.pop().data);
+    //     System.out.println(s2.pop().data);
+    //     System.out.println(s2.pop().data);
+    //     System.out.println(s2.pop().data);
 
 
-    }
-
+    // }
+    // USING RECURSIVE APPROACH
     // public static void postOrder(Node node){
     //     if(node == null)
     //       return;
