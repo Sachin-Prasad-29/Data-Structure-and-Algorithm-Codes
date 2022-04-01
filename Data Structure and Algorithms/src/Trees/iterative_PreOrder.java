@@ -32,7 +32,7 @@ public class iterative_PreOrder {
         return newNode;
         }  
     public static void main(String[] args) {
-        int[] nodes = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+        int[] nodes = {1,2,4,8,-1,-1,9,-1,-1,5,-1,-1,3,6,10,-1,-1,-1,7,11,-1,-1,12,-1,-1};
         Node root = buildTree(nodes);
         System.out.println("Using InOrder traversal using stack");
         inOrder(root);
