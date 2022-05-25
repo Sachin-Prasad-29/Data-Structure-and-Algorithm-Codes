@@ -40,6 +40,7 @@ public class Tarjans_algorithm_for_finding_strongly_connected_component {
         int timer = 0;
         for(int i = 0; i< n; i++){
             if(Disc[i] == -1)
+            // making dfs call if we have different components
                dfs(0, adj, stack, Disc, Low, Instack,timer);
         }
       
@@ -48,20 +49,24 @@ public class Tarjans_algorithm_for_finding_strongly_connected_component {
     private static void dfs(int index, ArrayList<ArrayList<Integer>> adj, Stack<Integer> stack, int[] Disc, int[] Low,
             boolean[] instack,int timer) {
        
-            Disc[index] = timer;
+            Disc[index] = timer; // at initail stage the dis and low is same as timer
             Low[index] = timer;
             stack.push(index);
             instack[index]= true;
+            timer++;
 
-            for(int ele : adj.get(index)){
+            for(int ele : adj.get(index)){ // every linked node of index node
                 if(Disc[ele] == -1){
-                    dfs(ele,adj,stack,Disc, Low,instack,timer+1);
+                    // if not visited call dfs for it
+                    dfs(ele,adj,stack,Disc, Low,instack,timer);
+                    // after dfs call at return time update the low value 
                     Low[index] = Math.min(Low[ele],Low[index]);
                 }else if(instack[ele]== true){
+                    // if there is back edge the low value changes as followes
                     Low[index] = Math.min(Low[index],Disc[ele]); 
                 }  
             } 
-            
+            // after dfs if disc and low of index is same print the SCC 
             if(Disc[index] == Low[index]){
                 System.out.print("  The SCC is ->");
 

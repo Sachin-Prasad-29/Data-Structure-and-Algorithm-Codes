@@ -1,5 +1,9 @@
-class Hell0{
+
+package Test_Questions;
+
+public class Hello{
     public static void main(String[] args) {
-        System.out.print(" HWEllo the world");
+       char ch = (char) 49;
+       System.out.println(ch);
     }
 }
