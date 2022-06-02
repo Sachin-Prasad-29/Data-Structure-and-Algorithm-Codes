@@ -5,31 +5,18 @@ import java.util.*;
 class Solution{
     
     public static void main(String[] args) {
-        int[] arr = {2,3,4,6,8};
-            int VAL = 0;
-        for(int i = 0 ; i < arr.length; i++){
-            int count = 0;
-            int n = 14;
-            while(n != 0){
-              int pow = minpower(n);
-              n = n -(int) Math.pow(2,pow);
-              count++;
+        String b = "khk";
+        String a = "abcd";
+        int val = 0;
+        for(int i  = 0 ; i < a.length(); i++){
+            val |= 1 << (a.charAt(i) - 'a');
         }
-        VAL = Math.max(count,VAL);
-      }
-      System.out.println(VAL);
-    }
-    private static int minpower(int n)
-    {
-        int count =0;
-        if(n==0 || n==1) { return 0; }
-        while(n != 1)
-        {
-            n = n/2;
-            count++;
-            
+        int val1 = 0;
+        for(int i  = 0 ; i < b.length(); i++){
+            val1 |= 1 << (b.charAt(i) - 'a');
         }
-        return count;
+        System.out.println(val+" "+val1);
+        System.out.println(val1 & val);
     }
 
 }
