@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class Josephus {
 
 	public static void main(String args[]) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Numbers of players and K value - ");
-		int m=sc.nextInt();
-		int n=sc.nextInt();
-		System.out.println("the final player is - "+jos(m,n));
+		try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter Numbers of players and K value - ");
+            int m=sc.nextInt();
+            int n=sc.nextInt();
+            System.out.println("the final player is - "+jos(m,n));
+        }
 		
 
 	}

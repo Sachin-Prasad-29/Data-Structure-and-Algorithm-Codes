@@ -6,18 +6,19 @@ import java.util.Stack;
 public class RevStack {
 
 	public static void main(String[] args) {
-		Scanner sc =new Scanner(System.in);
-		int n=sc.nextInt();
-		Stack<Integer> s1=new Stack<Integer>();
-		for(int i=0;i<n;i++){
-		int j=sc.nextInt();
-		s1.push(j);
+		try (Scanner sc = new Scanner(System.in)) {
+			int n=sc.nextInt();
+			Stack<Integer> s1=new Stack<Integer>();
+			for(int i=0;i<n;i++){
+			int j=sc.nextInt();
+			s1.push(j);
+			}
+			System.out.println(s1);
+			System.out.println(revStack(s1));
 		}
-		System.out.println(s1);
-		System.out.println(revStack(s1));
 
 	}
-	public static Stack revStack(Stack<Integer> s) {
+	public static Stack<Integer> revStack(Stack<Integer> s) {
 		if(s.isEmpty()) {
 			return s;
 		}
@@ -28,7 +29,7 @@ public class RevStack {
 		return s;
 	}
 	
-	public static Stack addBottomStack(Stack<Integer> s,int val) {
+	public static Stack<Integer> addBottomStack(Stack<Integer> s,int val) {
 		if(s.isEmpty()) {
 			s.push(val);
 			return s;	

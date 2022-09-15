@@ -6,17 +6,18 @@ import java.util.Scanner;
 public class binarySearchInfinite {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter size of the array - ");
-		int n=sc.nextInt();
-		int[] a=new int[n];
-		for(int i=0; i<n;i++) {
-			a[i]=sc.nextInt();	
-		}
-		System.out.println(Arrays.toString(a));
-		System.out.println("Enter the searching element - ");
-		int x=sc.nextInt();
-		System.out.println(searchInfinite(a,x));	
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter size of the array - ");
+			int n=sc.nextInt();
+			int[] a=new int[n];
+			for(int i=0; i<n;i++) {
+				a[i]=sc.nextInt();	
+			}
+			System.out.println(Arrays.toString(a));
+			System.out.println("Enter the searching element - ");
+			int x=sc.nextInt();
+			System.out.println(searchInfinite(a,x));
+		}	
 
 	}
 	public static int searchInfinite(int[] a,int x){

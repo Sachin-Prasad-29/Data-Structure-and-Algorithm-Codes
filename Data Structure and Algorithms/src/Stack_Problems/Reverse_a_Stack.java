@@ -17,7 +17,7 @@ public class Reverse_a_Stack {
 		System.out.println();
 		reverseStack(s);
 		PrintStack(s);
-
+		sc.close();
 	}
 
 	private static void reverseStack(Stack<Integer> s) {

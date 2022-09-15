@@ -14,7 +14,7 @@ public class StockBuySellMAnytime {
 			
 		}
 		System.out.println("The amx Profit is "+maxProfitStockmany(a,n));
-
+		sc.close();
 	}
 
 	private static int maxProfitStockmany(int[] a, int n) {

@@ -1,4 +1,4 @@
-77package Arrays;
+package Arrays;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class RainwaterTrapping {
 			
 		}
 		System.out.println("The amx Profit is "+rainWaterTrap(a,n));
-	
+	sc.close();
 
 	}
 

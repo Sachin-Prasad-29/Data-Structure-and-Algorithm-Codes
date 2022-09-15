@@ -50,52 +50,6 @@ public class minheap {
 
         }
 
-        // get the top element (minimum element) of heap
-        private int peek(){
-            return minHeap[realSize];
-        }
-
-        // delete the top element from the heap 
-            private int pop(){
-                if(realSize < 1){
-                    System.out.println("There is no element is the Heap ");
-                    return Integer.MAX_VALUE;
-                }
-
-                int minElement = minHeap[1];
-                minHeap[1] = minHeap[realSize];
-                realSize--;
-                int index = 1;
-                while(index <= realSize/2){
-                    int left = 2 * index;
-                    int right = (2 * index) +1;
-                    if(minHeap[index]< minHeap[left] || minHeap[index]< minHeap[right]){
-                        if(minHeap[left] < minHeap[right]){
-                            int temp = minHeap[left];
-                            minHeap[left] = minHeap[index];
-                            minHeap[index] = temp;
-    
-                            index = left;
-                        }
-                        else{
-                            int temp = minHeap[right];
-                            minHeap[right] = minHeap[index];
-                            minHeap[index] = temp;
-    
-                            index = right;
-                        }
-                    }
-                    else{
-                        break;
-                    }
-                }
-                return minElement;
-            }
-        // get the size of the Min Heap 
-        private int size(){
-            return realSize;
-        }
-
         // Print the heap 
         private void printHeap(){
             if(realSize < 1){

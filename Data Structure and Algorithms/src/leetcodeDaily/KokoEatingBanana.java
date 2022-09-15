@@ -16,7 +16,7 @@ public class KokoEatingBanana {
 		System.out.print("The the number ofhour needed : ");
 		int x=sc.nextInt();
 		System.out.println("output is "+ minEatingSpeed(a,x));	
-
+		sc.close();
 
 	}
 	

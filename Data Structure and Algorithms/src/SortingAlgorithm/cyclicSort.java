@@ -15,12 +15,12 @@ public class cyclicSort {
 			arr[i]=sc.nextInt();
 			
 		}
-		cyclicSort(arr);
+		cyclicSort_(arr);
 		System.out.println(Arrays.toString(arr));
-
+		sc.close();
 	}
 
-	private static void cyclicSort(int[] arr) {
+	private static void cyclicSort_(int[] arr) {
 		for(int i=0;i<arr.length;i++) {
 			if(arr[i]!=i+1) {
 				swap(arr,arr[i]-1,i);

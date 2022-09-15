@@ -9,7 +9,7 @@ public class Queue_Using_array {
     	static int front = -1;
     	Queue_(int n){
     		arr = new int[n];
-    		this.size = n;
+    		Queue_.size = n;
     			
     	}
     	

@@ -1,7 +1,5 @@
 package Trees;
 
-import java.util.Stack;
-
 public class Recursive_Pre_Order {
     static class Node{
         int data;

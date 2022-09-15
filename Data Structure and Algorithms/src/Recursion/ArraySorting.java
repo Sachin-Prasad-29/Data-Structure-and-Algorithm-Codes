@@ -19,8 +19,9 @@ public class ArraySorting {
 		System.out.println("Before Sorting"+n);
 		System.out.println("After sorting"+sort(n));
 
+           sc.close();
 	}
-	public static  ArrayList sort(ArrayList<Integer> n) { 
+	public static  ArrayList<Integer> sort(ArrayList<Integer> n) { 
 		if(n.size()==1) {
 			
 			return n ;
@@ -33,7 +34,7 @@ public class ArraySorting {
 		return n;
 	}
 	
-	public static ArrayList insert(ArrayList<Integer> n,int temp) {
+	public static ArrayList<Integer> insert(ArrayList<Integer> n,int temp) {
 		if(n.size()==0 || n.get(n.size()-1)<=temp) {
 			n.add(temp);
 			return n;

@@ -55,6 +55,7 @@ public class shortest_path_on_undirected_from_source {
 
         System.out.println(adj);
         shortestPath(adj.size(), adj);
+        sc.close();
     } 
 
     private static void shortestPath(int V,ArrayList<ArrayList<Integer>> adj){

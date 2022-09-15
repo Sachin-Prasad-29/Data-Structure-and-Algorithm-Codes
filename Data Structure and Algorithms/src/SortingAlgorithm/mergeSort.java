@@ -15,15 +15,16 @@ public class mergeSort {
 			arr[i]=sc.nextInt();
 			
 		}
-		mergeSort(arr,0,size-1);
+		mergeSort_(arr,0,size-1);
 		System.out.println(Arrays.toString(arr));
+		sc.close();
 	}
 
-	private static void mergeSort(int[] arr, int left, int right) {
+	private static void mergeSort_(int[] arr, int left, int right) {
 	  if(left<right) {
 		  int mid=left+(right-left)/2;
-		  mergeSort(arr,left,mid);
-		  mergeSort(arr,mid+1,right);
+		  mergeSort_(arr,left,mid);
+		  mergeSort_(arr,mid+1,right);
 		  merge(arr,left,mid,right);
 	  }
 		

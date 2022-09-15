@@ -57,7 +57,7 @@ public class Boundary_Triversal {
                 list.add(i, stack.pop().data);
             }
             System.out.println(list);
-            return list;
+            
         
     }
     private static void findLeft(Node node,Stack<Node> stack) {

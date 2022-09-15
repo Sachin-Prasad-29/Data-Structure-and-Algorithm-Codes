@@ -2,14 +2,15 @@ package Recursion;
 import java.util.*;
 public class Print1toN {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the no ");
-        int n = sc.nextInt();
-        printNumOne(1,n);
-        System.out.println("This is the second way :");
-        printNumTwo(++n);
-        System.out.println("Printing the number from N to 1");
-        printNto1(0,--n);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the no ");
+            int n = sc.nextInt();
+            printNumOne(1,n);
+            System.out.println("This is the second way :");
+            printNumTwo(++n);
+            System.out.println("Printing the number from N to 1");
+            printNto1(0,--n);
+        }
     }
     private static void printNumOne(int i, int n){
             if(i > n)

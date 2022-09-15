@@ -1,5 +1,4 @@
 package BruteForceSolution;
-import java.io.*;
 import java.util.Arrays;
 public class Find_missing_elements_of_range {
 

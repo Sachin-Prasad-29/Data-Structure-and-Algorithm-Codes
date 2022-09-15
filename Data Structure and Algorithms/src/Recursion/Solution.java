@@ -1,3 +1,5 @@
+package Recursion;
+
 public class Solution {
  // function to find the smallest number
  static int smallest(int num)

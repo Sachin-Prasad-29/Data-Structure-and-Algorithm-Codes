@@ -6,9 +6,6 @@ import java.util.Stack;
 public class Area_Of_histogram {
 
 	public static void main(String[] args) {
-		int[] h = {2,1,5,6,2,3};
-		
-		int ans=largestRectangleArea(h);
 
 	}
 	

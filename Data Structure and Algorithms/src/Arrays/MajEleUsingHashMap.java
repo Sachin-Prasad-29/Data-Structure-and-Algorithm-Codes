@@ -15,7 +15,7 @@ public class MajEleUsingHashMap {
 		}
 		System.out.println(Arrays.toString(arr));
         System.out.println(MajEleHashMap(arr));
-
+		sc.close();
 	}
 
 	private static String MajEleHashMap(int[] arr) {

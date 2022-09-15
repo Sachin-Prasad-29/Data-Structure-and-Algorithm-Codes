@@ -14,6 +14,7 @@ public class MajorityElementInArray {
 		}
 		System.out.println(Arrays.toString(arr));
 		System.out.println("Majority Element is : "+majorityEle(arr));
+		sc.close();
 		}
 
 	private static int majorityEle(int[] arr) {

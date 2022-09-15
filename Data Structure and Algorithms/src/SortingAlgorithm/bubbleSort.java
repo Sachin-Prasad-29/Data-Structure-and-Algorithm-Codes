@@ -17,7 +17,7 @@ import java.util.Scanner;
 		}
 		bubblesort(arr);
 		System.out.println(Arrays.toString(arr));
-
+		sc.close();
 	}
 	static void bubblesort(int[] a) {
 		for(int i=0;i<a.length-1;i++) {

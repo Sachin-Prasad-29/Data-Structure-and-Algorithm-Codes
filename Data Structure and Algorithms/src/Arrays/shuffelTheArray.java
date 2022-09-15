@@ -17,6 +17,7 @@ public class shuffelTheArray {
 		}
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(shuffle(a,a.length/2)));
+		sc.close();
 
 	}
 	public static int[] shuffle(int[] nums, int n) {

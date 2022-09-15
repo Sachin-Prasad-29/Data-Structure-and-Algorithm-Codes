@@ -6,7 +6,6 @@ public class Longest_K_unique_characters_substring {
 
 	public static void main(String[] args) {
 		String s="aabacccaba";
-		int n=s.length();
 		int k=2;
 		System.out.println(longestkSubstr( s, k));
 

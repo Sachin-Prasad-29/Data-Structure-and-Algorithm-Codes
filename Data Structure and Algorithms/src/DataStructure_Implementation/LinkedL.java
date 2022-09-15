@@ -92,7 +92,6 @@ public class LinkedL {
 	}
 	 public Node addRec(int data, int index,Node node) {
 		 if(index==0) {
-			 Node temp=new Node(data,node);
 		 }
 		 node.next=addRec(data, index--,node.next);
 		 return node;

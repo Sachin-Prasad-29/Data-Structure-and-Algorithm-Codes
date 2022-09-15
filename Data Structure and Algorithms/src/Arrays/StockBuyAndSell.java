@@ -14,6 +14,7 @@ public class StockBuyAndSell {
 			
 		}
 		System.out.println("The amx Profit is "+maxProfitStock(a,n));
+		sc.close();
 	
 	}
 

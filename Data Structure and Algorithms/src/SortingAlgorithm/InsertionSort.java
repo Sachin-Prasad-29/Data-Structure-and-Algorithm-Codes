@@ -17,7 +17,7 @@ public class InsertionSort {
 		}
 		insertionSort(arr);
 		System.out.println(Arrays.toString(arr));
-
+		sc.close();
 	}
 
 	private static void insertionSort(int[] arr) {

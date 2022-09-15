@@ -1,4 +1,4 @@
-package maths;
+package Mathamatics;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class GCD {
 		int b=sc.nextInt();
 		System.out.println("GCD of "+a+" & "+b+" is "+gcd(a,b));
 		
-
+		sc.close();
 	}
     public static int gcd(int a,int b) {
     	if(b==0)

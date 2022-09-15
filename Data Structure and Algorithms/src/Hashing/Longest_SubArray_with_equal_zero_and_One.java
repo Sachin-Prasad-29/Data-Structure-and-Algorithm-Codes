@@ -17,7 +17,6 @@ public class Longest_SubArray_with_equal_zero_and_One {
 		int finalEnd=0;
 		int maxLen=0;
 		HashMap<Integer,Integer> h=new HashMap<>();
-		int start=0,end=0;
 		// We have to find continous subarray here
 		for(int i=0;i<a.length;i++) {
 		sum+=a[i];

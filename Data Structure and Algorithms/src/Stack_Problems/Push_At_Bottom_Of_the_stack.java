@@ -20,7 +20,7 @@ public class Push_At_Bottom_Of_the_stack {
 	    System.out.println();
 	    System.out.println("After push");
 	    PrintStack(s);
-
+		sc.close();
 	}
 
 	

@@ -36,38 +36,6 @@ public class maxHeap {
         return maxheap[1];
     }
 
-    // delete the top element of the heap 
-    private int pop(){
-        if(realSize < 1){
-            System.out.println("There is no element in the Heap ");
-            return Integer.MAX_VALUE; 
-        }
-        int MaxElement = maxheap[1];
-        maxheap[1] = maxheap[realSize];
-        realSize--;
-        int index = 1;
-        while(index < realSize/2){
-            int left = 2 * index;
-            int right = (2*index)+1;
-            if(maxheap[left] > maxheap[index] || maxheap[right] > maxheap[index]){
-                if(maxheap[left] > maxheap[right]){
-                    int temp = maxheap[left];
-                    maxheap[left] =  maxheap[index];
-                    maxheap[index] = temp;
-                }
-                else{
-                    int temp = maxheap[right];
-                    maxheap[right] =  maxheap[index];
-                    maxheap[index] = temp;
-                }
-            }else{
-                break;
-            }
-        }
-        return MaxElement;
-
-    }
-
     // return the size of the heap 
     private int size(){
         return realSize;

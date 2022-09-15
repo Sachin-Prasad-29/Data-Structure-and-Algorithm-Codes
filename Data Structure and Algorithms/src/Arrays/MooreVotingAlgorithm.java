@@ -14,6 +14,7 @@ public class MooreVotingAlgorithm {
 		}
 		System.out.println(Arrays.toString(arr));
         System.out.println(MooreVoting(arr));
+		sc.close();
 	}
 
 	private static String MooreVoting(int[] arr) {

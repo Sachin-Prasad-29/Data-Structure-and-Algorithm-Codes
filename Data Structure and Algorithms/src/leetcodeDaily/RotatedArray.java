@@ -19,7 +19,7 @@ public class RotatedArray {
 		int x=sc.nextInt();
 		rotate(arr,x);
 		System.out.println(Arrays.toString(arr));
-
+		sc.close();
 	}
 	 public static void rotate(int[] nums, int k) {
 	        rotateArray(nums,0,nums.length-1);

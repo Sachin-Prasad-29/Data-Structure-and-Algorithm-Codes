@@ -22,8 +22,7 @@ class PairComparator implements Comparator<Pairs>{
 public class topKfrequentNumbers {
     public static void main(String[] args) {
             int[] arr = {6,6,6,1,3,4,1,1,1,2,2,2,5};
-            int k = 3;
-        PairComparator com = new PairComparator();
+            PairComparator com = new PairComparator();
          PriorityQueue<Pairs> heap = new PriorityQueue<>(100, com);
 
         HashMap<Integer,Integer> hash = new HashMap<>();

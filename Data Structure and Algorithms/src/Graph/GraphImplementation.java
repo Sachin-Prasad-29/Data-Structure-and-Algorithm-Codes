@@ -2,7 +2,6 @@ package Graph;
 import java.util.*;
 public class GraphImplementation {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);

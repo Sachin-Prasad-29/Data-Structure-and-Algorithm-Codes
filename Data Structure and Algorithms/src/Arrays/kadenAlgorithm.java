@@ -12,7 +12,7 @@ public class kadenAlgorithm {
 			arr[i]=sc.nextInt();	
 		}
 		System.out.println(kadenAlgo(arr));
-
+      sc.close();
 	}
 	public static int kadenAlgo(int[] arr) {
 		int currSum=0;

@@ -17,9 +17,7 @@ public class Longest_consecutive_subsequence {
 		a[j++]=a[n-1];
 		System.out.println(Arrays.toString(a));
 		int mx_len=0;
-	    int start=0;
-		
-		int cur_length=1;
+	    int cur_length=1;
 		for(int i=0; i<n-1 ;i++) {
 			   if(a[i]+1==a[i+1])cur_length++;
 			   

@@ -15,7 +15,7 @@ public class BookAllocation {
 		System.out.println(" Enter the number of students");
 		int x=sc.nextInt();
 		System.out.println("The minium largest no of pages is "+ binarySearch(a,x));
-
+sc.close();
 	}
 
 	private static int binarySearch(int[] a, int x) {

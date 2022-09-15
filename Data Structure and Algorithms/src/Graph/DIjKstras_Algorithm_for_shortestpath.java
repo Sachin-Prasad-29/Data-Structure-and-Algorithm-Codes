@@ -1,8 +1,6 @@
 package Graph;
 
 import java.util.*;
-
-import javax.swing.event.SwingPropertyChangeSupport;
 // Node class to store the Val and edge weight 
 class Node implements Comparator<Node>{
     int val ;
@@ -54,8 +52,7 @@ public class DIjKstras_Algorithm_for_shortestpath {
         graph.get(3).add(new Node(5,3));
 
         graph.get(4).add(new Node(5,2));
-        //DIjKstras_Algorithm_for_shortestpath obj = new DIjKstras_Algorithm_for_shortestpath();
-        int N = graph.size();
+        graph.size();
         findShortestPath(0,graph,6 );
 
     }

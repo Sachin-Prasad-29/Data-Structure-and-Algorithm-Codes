@@ -1,14 +1,12 @@
 package Recursion;
 import java.util.*;
 
-import javax.print.PrintService;
 
 // What is Subsequence ?
 // It is a subset of array of contigous and non contigous but must follow same order 
 public class ArraySubsequences {
     public static void main(String[] args) {
         int[]  arrs = {2, 3, 6, 7};
-        int target = 7;
         List<Integer> list = new ArrayList<>();
         printSubseq(0,arrs,list);
 

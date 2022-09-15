@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class StringPowerSet {
 
 	public static void main(String[] args) {
-		Scanner sc= new Scanner(System.in);
-		String s=sc.nextLine();
-		powerSet(s,0,"");
+		try (Scanner sc = new Scanner(System.in)) {
+			String s=sc.nextLine();
+			powerSet(s,0,"");
+		}
 
 	}
 	public static void powerSet(String s,int i,String cur) {

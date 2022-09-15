@@ -10,6 +10,7 @@ public class SpiralMatrixII {
 		int n=sc.nextInt();
 		
 		System.out.println(Arrays.toString(generateMatrix(n)));
+        sc.close();
 
 	}
 	public static int[][] generateMatrix(int n) {

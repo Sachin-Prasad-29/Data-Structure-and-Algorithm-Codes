@@ -44,11 +44,11 @@ public class Stack_DS {
 	 
 	public static class Stack1{
 		static ArrayList<Integer> list = new ArrayList<>();
-		public static void push(int data) {
+		public void push(int data) {
 			list.add(data);
 		}
 		
-		public static int pop() {
+		public int pop() {
 			if(isEmpty()) return -1;
 			 int val = list.get(list.size()-1);
 			 list.remove(list.size()-1);
@@ -78,21 +78,20 @@ public class Stack_DS {
 			s.push(5);
 			s.push(6);
 			
-			while(!s.isEmpty()) {
+			while(!Stack1.isEmpty()) {
 				System.out.print(s.pop()+" ");
 			}
 			System.out.println();
 			System.out.println("-----------------------------");
-			Stack s1 = new Stack();
-			s1.push(1);
-			s1.push(2);
-			s1.push(4);
-			s1.pop();
-			s1.push(5);
-			s1.push(6);
+			Stack.push(1);
+			Stack.push(2);
+			Stack.push(4);
+			Stack.pop();
+			Stack.push(5);
+			Stack.push(6);
 			
-			while(!s1.isEmpty()) {
-				System.out.print(s1.pop()+" ");
+			while(!Stack.isEmpty()) {
+				System.out.print(Stack.pop()+" ");
 			}
 	}
 

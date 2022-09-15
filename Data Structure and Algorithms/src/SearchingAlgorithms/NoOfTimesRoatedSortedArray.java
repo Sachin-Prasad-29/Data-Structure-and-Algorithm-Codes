@@ -16,7 +16,7 @@ public class NoOfTimesRoatedSortedArray {
 		System.out.println(Arrays.toString(a));
 		
 		System.out.println("the Mountain  number is : "+mountainEle(a,0,a.length-1));
-
+		sc.close();
 	}
 
 	private static int  mountainEle(int[] a, int start, int end) {

@@ -1,9 +1,6 @@
 package Arrays;
 
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
 import java.util.Scanner;
 
 public class GoodPair {
@@ -20,6 +17,7 @@ public class GoodPair {
 		}
 		System.out.println(Arrays.toString(a));
         System.out.println(numIdenticalPairs(a));
+        sc.close();
 	}
 	
 	public static int numIdenticalPairs(int[] nums) {

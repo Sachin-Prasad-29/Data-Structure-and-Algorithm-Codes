@@ -14,9 +14,9 @@ public class DeleteMidElementOfStack {
 		s1.push(j);
 		}
 		System.out.println(deleteMidElement(s1,(s1.size()/2)+1));
-
+		sc.close();
 	}
-	 public static Stack deleteMidElement(Stack<Integer> s1,int k) {
+	 public static Stack<Integer> deleteMidElement(Stack<Integer> s1,int k) {
 		 if(k==1) {
 			 s1.pop();
 			 return s1;

@@ -17,7 +17,7 @@ public class celingOfTheNumber {
 		System.out.println("Enter the target  element - ");
 		int x=sc.nextInt();
 		System.out.println("the ceiling number is"+ceilingOfTheNumber(a,x));
-
+		sc.close();
 	}
 
 	private static int ceilingOfTheNumber(int[] a, int x) {

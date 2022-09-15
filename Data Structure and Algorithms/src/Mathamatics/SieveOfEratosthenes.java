@@ -1,4 +1,4 @@
-package maths;
+package Mathamatics;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,6 +17,7 @@ public class SieveOfEratosthenes {
 		for(Integer ele : arr) {
 			System.out.println(ele);
 		}
+		sc.close();
       
 	}
     public static boolean[]  sieveofEra(int n) {
@@ -40,6 +41,7 @@ public class SieveOfEratosthenes {
     			res.add(i);
     		}
     	}
+		
     	return res;
     }
 }

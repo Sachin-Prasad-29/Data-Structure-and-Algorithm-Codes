@@ -22,6 +22,7 @@ public class RainWater {
    
             System.out.println(sb.toString());
         }
+        sc.close();
         
     }
 }

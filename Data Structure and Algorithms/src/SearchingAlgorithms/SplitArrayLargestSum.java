@@ -18,7 +18,7 @@ public class SplitArrayLargestSum {
 		int x=sc.nextInt();
 		System.out.println("output is "+ splitArray(a,x));	
 
-
+		sc.close();
 	}
 
 	private static int  splitArray(int[] a, int split) {

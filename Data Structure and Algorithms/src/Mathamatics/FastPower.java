@@ -1,4 +1,4 @@
-package maths;
+package Mathamatics;
 
 public class FastPower {
 

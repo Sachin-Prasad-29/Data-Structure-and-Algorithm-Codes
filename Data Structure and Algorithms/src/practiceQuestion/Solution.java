@@ -1,7 +1,6 @@
 package practiceQuestion;
 
 import java.util.HashSet;
-import java.util.Scanner;
 
 public class Solution {
 	public static void main(String args[])
